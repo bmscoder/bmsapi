@@ -35,4 +35,4 @@ def api():
         return jsonify({'error': "Something went wrong: " + str(e)})
 
 if __name__ == '__main__':
-    app.run(debug=False, host=os.getenv('IP', '0.0.0.0'), port=int(os.getenv('PORT', 4445)))
+    app.run(debug=False)
